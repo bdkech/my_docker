@@ -20,5 +20,7 @@ RUN wget https://github.com/codercom/code-server/releases/download/1.408-vsc1.32
 
 COPY docker-entrypoint.sh /usr/local/bin/
 
+ENV PATH="/usr/local/bin/:${PATH}"
+RUN echo "export PATH=$PATH" > /etc/environment
 
 ENTRYPOINT ["docker-entrypoint.sh"]
