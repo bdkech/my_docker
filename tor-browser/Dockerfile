@@ -6,8 +6,8 @@
 #	-v /dev/shm:/dev/shm \
 #	-v /etc/machine-id:/etc/machine-id:ro \
 #	-e DISPLAY=unix$DISPLAY \
-#	tor-browser
-
+#   my_tor
+#
 FROM debian:bullseye-slim
 LABEL maintainer "bdkech@gmail.com"
 
