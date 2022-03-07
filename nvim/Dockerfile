@@ -32,3 +32,6 @@ RUN \
 	git
 
 COPY nvim /root/.config/nvim
+
+RUN git clone https://github.com/VundleVim/Vundle.vim.git /root/config/.nvim/bundle/Vundle.vim && \
+    nvim +PluginInstall +qall
