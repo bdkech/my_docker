@@ -3,8 +3,8 @@
 #
 # docker run -p 8443:8443 -p 8888:8888 \
 #   -v $(pwd)/data:/data -v $(pwd)/code:/code \
-#   --rm -it churn-prediction
-
+#   --rm -it my_data_sci
+#
 # the base miniconda3 image
 FROM continuumio/miniconda3:latest
 
