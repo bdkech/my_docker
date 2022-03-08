@@ -31,7 +31,9 @@ RUN \
 	musl-dev \
 	git
 
-COPY nvim /root/.config/nvim
-
-RUN git clone https://github.com/VundleVim/Vundle.vim.git /root/config/.nvim/bundle/Vundle.vim && \
+RUN git clone https://github.com/VundleVim/Vundle.vim.git /root/.config/nvim/bundle/Vundle.vim && \
     nvim +PluginInstall +qall
+
+COPY nvim /root/.config/nvim
+RUN nvim +PluginInstall +qall
+
